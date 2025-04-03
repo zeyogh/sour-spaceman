@@ -20,16 +20,22 @@ img {
   height: $box-width;
 }
 
+.leftRow {
+  grid-column: 1;
+}
+
+.rightRow {
+  grid-column: 2;
+}
+
 #postImage {
   object-fit: cover;
   padding: 0px;
-  grid-column: 1;
   grid-row: 1;
 }
 
 #postText {
   padding: 0px;
-  grid-column: 2;
   grid-row: 1;
   background-color: blueviolet;
   color: #2c0a4c;

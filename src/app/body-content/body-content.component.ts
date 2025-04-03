@@ -10,4 +10,10 @@ import { DUMMY_POSTS } from './dummy_posts';
 })
 export class BodyContentComponent {
   posts = DUMMY_POSTS;
+  counter = 0;
+
+  countUp() {
+    this.counter++;
+    return this.counter;
+  }
 }

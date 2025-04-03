@@ -1,8 +1,16 @@
-<div class="grid-container">
-  <div id="postImage">
+<div #myElementRef class="grid-container">
+  <div
+    id="postImage"
+    [class.leftRow]="keepLeft()"
+    [class.rightRow]="!keepLeft()"
+  >
     <img [src]="this.imagePath" [alt]="this.imagePath" />
   </div>
-  <div id="postText">
+  <div
+    id="postText"
+    [class.leftRow]="!keepLeft()"
+    [class.rightRow]="keepLeft()"
+  >
     <article>
       <h2>{{ this.title }}</h2>
       <!-- <p>{{ this.textContent }}</p> -->
