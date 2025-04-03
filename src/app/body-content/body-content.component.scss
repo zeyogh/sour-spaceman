@@ -1,0 +1,11 @@
+html {
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  margin: auto;
+  width: 80%;
+  // border: 3px dotted #2c0a4c; //temporary border for me to see
+  padding: 10px;
+}
