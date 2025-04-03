@@ -1,6 +1,6 @@
 html {
   display: flex;
-  flex-direction: column;
+  text-align: center;
 }
 
 p {
@@ -11,4 +11,16 @@ p {
   color: #2c0a4c;
   text-align: justify;
   font-family: 'Bluebird';
+}
+
+#posts {
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  gap: 0.5rem;
+  overflow: auto;
+  flex-direction: column;
 }

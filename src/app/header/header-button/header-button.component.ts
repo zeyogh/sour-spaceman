@@ -7,5 +7,5 @@ import { Component, Input, input, OnInit } from '@angular/core';
   styleUrl: './header-button.component.scss',
 })
 export class HeaderButtonComponent {
-  @Input() label!: string;
+  @Input({ required: true }) label!: string;
 }

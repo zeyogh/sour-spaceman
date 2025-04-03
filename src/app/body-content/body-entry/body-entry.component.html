@@ -1,0 +1,25 @@
+<div class="grid-container">
+  <div id="postImage">
+    <img [src]="this.imagePath" [alt]="this.imagePath" />
+  </div>
+  <div id="postText">
+    <article>
+      <h2>{{ this.title }}</h2>
+      <!-- <p>{{ this.textContent }}</p> -->
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ex leo,
+        gravida eu venenatis et, sollicitudin ut enim. Praesent ultricies lacus
+        id purus laoreet interdum. Proin viverra imperdiet dignissim. Lorem
+        ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut mi
+        fermentum sem luctus sollicitudin congue ut elit. Donec congue maximus
+        dapibus.
+      </p>
+      <p>
+        Aliquam luctus tortor ligula, vitae pretium libero rhoncus id. Curabitur
+        vehicula auctor orci vel faucibus. Praesent sodales urna ut lectus
+        vehicula maximus.
+      </p>
+      <p>{{ this.signoff }}</p>
+    </article>
+  </div>
+</div>

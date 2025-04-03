@@ -1,4 +1,17 @@
-<p>
+<ul id="posts">
+  @for (post of posts; track post.id) {
+  <li>
+    <app-body-entry
+      [title]="post.title"
+      [textContent]="post.textContent"
+      [img]="post.img"
+      [signoff]="post.signoff"
+    />
+  </li>
+  }
+</ul>
+
+<!-- <p>
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ex leo, gravida
   eu venenatis et, sollicitudin ut enim. Praesent ultricies lacus id purus
   laoreet interdum. Proin viverra imperdiet dignissim. Lorem ipsum dolor sit
@@ -51,4 +64,4 @@
   hendrerit non velit vel semper. Quisque et ex efficitur elit varius pretium id
   et eros. Cras id purus aliquet, fermentum quam ac, laoreet arcu. Morbi luctus
   urna eu velit aliquet lacinia.
-</p>
+</p> -->

@@ -1,0 +1,42 @@
+$box-width: 400px;
+$box-height: 400px;
+
+img {
+  object-fit: cover;
+  width: $box-width;
+  height: $box-width;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 0.05fr);
+  gap: 0px;
+  padding: 15px;
+}
+
+.grid-container > div {
+  padding: 0px;
+  width: $box-width;
+  height: $box-width;
+}
+
+#postImage {
+  object-fit: cover;
+  padding: 0px;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#postText {
+  text-align: left;
+  padding: 0px;
+  grid-column: 2;
+  grid-row: 1;
+  background-color: blueviolet;
+}
+
+h2, p {
+  padding: 5px;
+  margin: 5px;
+}
+

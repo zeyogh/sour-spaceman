@@ -1,11 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { BodyEntryComponent } from './body-entry/body-entry.component';
+import { DUMMY_POSTS } from './dummy_posts';
 
 @Component({
   selector: 'app-body-content',
-  imports: [],
+  imports: [BodyEntryComponent],
   templateUrl: './body-content.component.html',
-  styleUrl: './body-content.component.scss'
+  styleUrl: './body-content.component.scss',
 })
 export class BodyContentComponent {
-
+  posts = DUMMY_POSTS;
 }
