@@ -12,6 +12,27 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Amerika';
+  src: url('../assets/Amerika-EPe.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Amerika-Alternate';
+  src: url('../assets/AmerikaAlternates-OYP.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bluebird';
+  src: url('../assets/Bluebird-n56J.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 html {
   background-color: rgb(163, 139, 173);
