@@ -28,15 +28,35 @@ img {
 }
 
 #postText {
-  text-align: left;
   padding: 0px;
   grid-column: 2;
   grid-row: 1;
   background-color: blueviolet;
+  color: #2c0a4c;
+  position: relative;
 }
 
-h2, p {
+h2 {
+  font-family: "Alagard";
+  font-size: 50px;
   padding: 5px;
   margin: 5px;
+}
+
+p {
+  font-family: "Bluebird";
+  padding: 5px;
+  margin: 5px;
+}
+
+time {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-family: "Bluebird";
+  text-align: right;
+  padding: 5px;
+  margin: 5px;
+  color: #4d0b8a;
 }
 

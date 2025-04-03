@@ -5,6 +5,7 @@ export const DUMMY_POSTS = [
     textContent: 'Lorem Ipsum...',
     img: 'character_img.png',
     signoff: '--Zeynep',
+    date: '2025-12-31',
   },
   {
     id: '112',
@@ -12,5 +13,6 @@ export const DUMMY_POSTS = [
     textContent: 'Lorem Ipsum something...',
     img: 'character_img.png',
     signoff: '--Zeynep Again',
+    date: '2025-06-21',
   },
 ];
