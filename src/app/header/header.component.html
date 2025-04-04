@@ -7,7 +7,9 @@
       <h1>Sour Spaceman</h1>
     </div>
     <div class="item-button"><app-header-button [label]="'Games'" /></div>
-    <div class="item-button"><app-header-button [label]="'News'" /></div>
+    <div class="item-button" routerLink="/blog">
+      <app-header-button [label]="'Blog'" />
+    </div>
     <div class="item-button"><app-header-button [label]="'About'" /></div>
     <div class="item-button"><app-header-button [label]="'Contact'" /></div>
   </div>

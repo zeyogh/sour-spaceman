@@ -1,6 +1,7 @@
-import { Component, Input } from '@angular/core';
+import { Component, inject, Input } from '@angular/core';
 import { BodyEntryComponent } from './body-entry/body-entry.component';
 import { DUMMY_POSTS } from './dummy_posts';
+import { ResolveFn } from '@angular/router';
 
 @Component({
   selector: 'app-body-content',
@@ -17,3 +18,24 @@ export class BodyContentComponent {
     return this.counter;
   }
 }
+
+// export const resolveUserTasks: ResolveFn<Task[]> = (
+//   activatedRouteSnapshot,
+//   routerState
+// ) => {
+//   const order = activatedRouteSnapshot.queryParams['order'];
+//   const tasksService = inject(TasksService);
+//   const tasks = tasksService
+//     .allTasks()
+//     .filter(
+//       (task) => task.userId === activatedRouteSnapshot.paramMap.get('userId')
+//     );
+
+//   if (order && order === 'asc') {
+//     tasks.sort((a, b) => (a.id > b.id ? 1 : -1));
+//   } else {
+//     tasks.sort((a, b) => (a.id > b.id ? -1 : 1));
+//   }
+
+//   return tasks.length ? tasks : [];
+// };
