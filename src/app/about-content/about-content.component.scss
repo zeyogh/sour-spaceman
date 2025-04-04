@@ -1,0 +1,71 @@
+#about {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+img {
+  max-height: 400px;
+  max-width: 400px;
+}
+
+h1, h2 {
+  font-family: 'Alagard';
+  color: #0c065f;
+}
+
+p {
+  font-family: 'Bluebird';
+  color: #2c0a4c;
+}
+
+#motto {
+  margin-top: 45px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  gap: 0px;
+  padding: 15px;
+}
+
+.grid-container > div {
+  padding-inline: 75px;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 150px;
+}
+
+.icon {
+  grid-row: 1;
+}
+
+.name {
+  grid-row: 2;
+}
+
+.description {
+  grid-row: 3;
+  text-align: left;
+}
+
+.zeynep {
+  grid-column: 1;
+}
+
+.tucker {
+  grid-column: 2;
+}
+
+.savannah {
+  grid-column: 3;
+}
+
+.rounded {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
