@@ -1,0 +1,49 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 0.05fr);
+  padding: 15px;
+}
+
+#video {
+  grid-column: 1;
+}
+
+#desc {
+  grid-column: 2;
+  background-color: blueviolet;
+  color: #2c0a4c;
+  font-family: 'Bluebird';
+  width: 640px;
+  height: 360px;
+  position: relative;
+}
+
+#logo {
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+
+}
+
+img {
+  max-width: 75%;
+  max-height: 25%;
+}
+
+#textDescription {
+  padding: 5px;
+  margin: 5px;
+}
+
+#buyButton {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  // display: flex;
+  // flex-direction:column;
+  // align-items: flex-end;
+  text-align: right;
+  padding: 5px;
+  margin: 5px;
+}

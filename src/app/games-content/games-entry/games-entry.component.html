@@ -1,0 +1,17 @@
+<div class="grid-container">
+  <div id="video">
+    <youtube-player
+      class="rounded-start d-flex"
+      [videoId]="this.video"
+      [height]="360"
+      [width]="640"
+    />
+  </div>
+  <div id="desc">
+    <div id="logo">
+      <img [src]="this.logo" [alt]="this.title" />
+    </div>
+    <p id="textDescription">{{ this.description }}</p>
+    <app-header-button id="buyButton" [label]="'Buy Now!'" />
+  </div>
+</div>
