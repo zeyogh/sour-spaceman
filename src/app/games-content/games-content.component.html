@@ -1,1 +1,12 @@
-<p>games-content works!</p>
+<ul id="games">
+  @for (game of games; track game.id) {
+  <li>
+    <app-games-entry
+      [title]="game.title"
+      [logo]="game.logo"
+      [description]="game.description"
+      [video]="game.video"
+    />
+  </li>
+  }
+</ul>

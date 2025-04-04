@@ -4,8 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-about-content',
   imports: [],
   templateUrl: './about-content.component.html',
-  styleUrl: './about-content.component.scss'
+  styleUrl: './about-content.component.scss',
 })
-export class AboutContentComponent {
-
-}
+export class AboutContentComponent {}
