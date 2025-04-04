@@ -1,0 +1,22 @@
+form {
+  background-color: blueviolet;
+  display: flex;
+  flex-direction: column;
+  max-width: 40%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+h1, h2 {
+  font-family: 'Alagard';
+  color: #0c065f;
+}
+
+label {
+  font-family: 'Bluebird';
+  color: #2c0a4c;
+}
+
+input, button {
+}

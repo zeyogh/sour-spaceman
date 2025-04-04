@@ -1,1 +1,30 @@
-<p>contact-content works!</p>
+<form #form="ngForm" (ngSubmit)="onSubmit(form)">
+  <h2>Contact Us!</h2>
+  <label for="email">Email</label>
+  <input
+    id="email"
+    type="email"
+    name="email"
+    ngModel
+    required
+    email
+    #email="ngModel"
+  />
+  <label for="message">Message</label>
+  <input
+    id="message"
+    type="text"
+    name="message"
+    ngModel
+    required
+    minlength="5"
+    maxlength="500"
+    #message="ngModel"
+  />
+  <button class="button">Login</button>
+  @if (email.touched && email.dirty && email.invalid) {
+  <p>Invalid email.</p>
+  } @if (message.touched && message.dirty && message.invalid) {
+  <p>Invalid message.</p>
+  }
+</form>
