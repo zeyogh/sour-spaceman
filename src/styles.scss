@@ -37,6 +37,8 @@ html {
   // background-color: rgb(0, 0, 0);
   background: linear-gradient(to bottom, #000000 0%, #141414 100%);
   background-size: 100% 150%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .goldButton {

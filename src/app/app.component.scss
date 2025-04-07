@@ -3,9 +3,7 @@ $starFieldWidth: 7000;
 $starFieldHeight: 2800;
 $starStartOffset: 600px;
 
-$starOneScrollDuration: 100s;
-$starTwoScrollDuration: 125s;
-$starThreeScrollDuration: 175s;
+$starSpeed: 300s;
 $numStarOneStars: 1700;
 $numStarTwoStars: 700;
 $numStarThreeStars: 200;
@@ -23,8 +21,8 @@ html {
 .main-container {
   display: block;
   position: relative;
-  width: 1200px;
-  height: 600px;
+  width: 0px;
+  height: 0px;
   top: 0%;
   left: 0%;
 }
@@ -43,20 +41,20 @@ html {
     transform: translateY(0px);
   }
   to {
-    transform: translateY(-#{$starFieldHeight}px)
-      translateX(-#{$starFieldWidth}px);
+    transform: translateY(-#{$starFieldHeight / 2}px)
+      translateX(-#{$starFieldWidth / 2}px);
   }
 }
 
 @keyframes animShootingStar {
   from {
-    transform: translateY(0px) translateX(0px) rotate(-45deg);
+    transform: translateY(0px) translateX(0px) rotate(120deg);
     opacity: 1;
     height: 5px;
   }
   to {
-    transform: translateY(-#{$starFieldHeight}px)
-      translateX(-#{$starFieldWidth}px) rotate(-45deg);
+    transform: translateY(#{$starFieldHeight}px)
+      translateX(#{$starFieldWidth}px) rotate(120deg);
     opacity: 1;
     height: 800px;
   }
@@ -69,7 +67,7 @@ html {
   border-radius: 50%;
   background: transparent;
   box-shadow: create-stars($numStars);
-  // animation: animStar $scrollSpeed linear infinite;
+  animation: animStar $scrollSpeed linear infinite;
   &:after {
     content: " ";
     top: -$starStartOffset;
@@ -100,16 +98,35 @@ html {
 }
 
 .stars {
-  @include star-template($numStarOneStars, 1px, $starOneScrollDuration);
+  @include star-template($numStarOneStars, 1px, $starSpeed);
 }
 .stars2 {
-  @include star-template($numStarTwoStars, 2px, $starTwoScrollDuration);
+  @include star-template($numStarTwoStars, 2px, $starSpeed);
 }
 .stars3 {
-  @include star-template($numStarThreeStars, 3px, $starThreeScrollDuration);
+  @include star-template($numStarThreeStars, 3px, $starSpeed);
 }
 .comet {
-  @include shooting-star-template($numComet, 5px, 10s);
+  @include shooting-star-template($numComet, 5px, 30s);
+}
+
+@keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeinout {
+  animation: flickerAnimation $starSpeed + 1 infinite;
 }
 //Star Stuff End
 
