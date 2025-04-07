@@ -1,9 +1,9 @@
 //Star Stuff Begin
-$starFieldWidth: 7000;
-$starFieldHeight: 2800;
+$starFieldWidth: 10000;
+$starFieldHeight: 4000;
 $starStartOffset: 600px;
 
-$starSpeed: 300s;
+$starSpeed: 100s;
 $numStarOneStars: 1700;
 $numStarTwoStars: 700;
 $numStarThreeStars: 200;
@@ -37,12 +37,15 @@ html {
 }
 
 @keyframes animStar {
-  from {
+  0% {
     transform: translateY(0px);
   }
-  to {
+  50% {
     transform: translateY(-#{$starFieldHeight / 2}px)
       translateX(-#{$starFieldWidth / 2}px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }
 
@@ -67,17 +70,17 @@ html {
   border-radius: 50%;
   background: transparent;
   box-shadow: create-stars($numStars);
-  animation: animStar $scrollSpeed linear infinite;
-  &:after {
-    content: " ";
-    top: -$starStartOffset;
-    width: $starSize;
-    height: $starSize;
-    border-radius: 50%;
-    position: absolute;
-    background: transparent;
-    box-shadow: create-stars($numStars);
-  }
+  animation: animStar $scrollSpeed ease-in-out infinite;
+  // &:after {
+  //   content: " ";
+  //   // top: -$starStartOffset;
+  //   // width: $starSize;
+  //   // height: $starSize;
+  //   // border-radius: 50%;
+  //   // position: absolute;
+  //   // background: transparent;
+  //   // box-shadow: create-stars($numStars);
+  // }
 }
 
 @mixin shooting-star-template($numStars, $starSize, $speed) {
@@ -110,24 +113,6 @@ html {
   @include shooting-star-template($numComet, 5px, 30s);
 }
 
-@keyframes flickerAnimation {
-  0% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 1;
-  }
-  95% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.fadeinout {
-  animation: flickerAnimation $starSpeed + 1 infinite;
-}
 //Star Stuff End
 
 app-header {
