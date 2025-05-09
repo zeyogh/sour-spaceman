@@ -43,34 +43,28 @@ body {
 .stars {
   position: fixed;
   top: 0;
-  right: -80vw;
+  right: -100vw;
   width: 100%;
   height: 120%;
   z-index: -3;
 }
 
 .star {
-  $star-count: 50;
-  --star-color: var(--primary-color);
-  --star-width: 2px;
-  --fall-duration: 9s;
-
+  $star-count: 200;
   position: absolute;
   top: var(--top-offset);
   left: 0;
-  width: 2px;
-  height: 2px;
-  color: var(--star-color);
   background: white;
   border-radius: 50%;
-  filter: drop-shadow(0 0 6px currentColor);
-  transform: translate3d(104em, 0, 0);
   animation: fall var(--fall-duration) var(--fall-delay) linear infinite;
 
   @for $i from 1 through $star-count {
     &:nth-child(#{$i}) {
+      --star-dim: #{random_range(1px, 3px)};
+      width: var(--star-dim);
+      height: var(--star-dim);
       --top-offset: #{random_range(0vh, 10000vh) / 100};
-      --fall-duration: #{random_range(6000, 12000s) / 100};
+      --fall-duration: #{random_range(10000, 12000s) / 1000};
       --fall-delay: -#{random_range(0, 10000s) / 100};
     }
   }
@@ -80,7 +74,6 @@ body {
     position: absolute;
     content: "";
     top: 0;
-    left: calc(var(--star-width) / -2);
     width: var(--star-width);
     height: 100%;
     background: white;
@@ -91,7 +84,7 @@ body {
 
 @keyframes fall {
   to {
-    transform: translate3d(-80vw, 0, 0);
+    transform: translate3d(-100vw, 0, 0);
   }
 }
 
@@ -99,4 +92,38 @@ body {
   50% {
     opacity: 0.6;
   }
+}
+
+@keyframes animShootingStar {
+  from {
+    transform: translateY(-2800px) translateX(-6000px) rotate(120deg);
+    opacity: 1;
+    height: 5px;
+  }
+  to {
+    transform: translateY(-100px) translateX(-100px) rotate(120deg);
+    opacity: 1;
+    height: 800px;
+  }
+}
+
+@mixin shooting-star-template($numStars, $starSize, $speed) {
+  z-index: -1;
+  width: $starSize;
+  height: $starSize + 80px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1)
+  );
+  animation: animShootingStar $speed linear infinite;
+}
+
+.comet {
+  @include shooting-star-template(1, 5px, 10s);
 }
