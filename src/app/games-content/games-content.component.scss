@@ -5,7 +5,7 @@ p {
   padding: 10px;
   color: #2c0a4c;
   text-align: justify;
-  font-family: 'Bluebird';
+  font-family: "Bluebird";
 }
 
 #games {
@@ -18,4 +18,6 @@ p {
   gap: 0.5rem;
   // overflow: auto;
   flex-direction: column;
+  margin: 0;
+  margin-top: 20vh;
 }

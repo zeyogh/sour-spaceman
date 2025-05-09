@@ -10,7 +10,7 @@ p {
   padding: 10px;
   color: #2c0a4c;
   text-align: justify;
-  font-family: 'Bluebird';
+  font-family: "Bluebird";
 }
 
 #posts {
@@ -23,4 +23,5 @@ p {
   gap: 0.5rem;
   // overflow: auto;
   flex-direction: column;
+  margin-top: 20vh;
 }

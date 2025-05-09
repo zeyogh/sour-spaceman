@@ -1,3 +1,26 @@
+html {
+  height: 100%;
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+}
+
+.main-container {
+  display: block;
+  position: relative;
+  width: 0px;
+  height: 0px;
+  top: 0%;
+  left: 0%;
+}
+
+app-header {
+  display: flex;
+  justify-content: center;
+}
+
 @mixin sp-layout {
   @media screen and (max-width: 750px) {
     @content;
@@ -46,8 +69,8 @@ body {
   @for $i from 1 through $star-count {
     &:nth-child(#{$i}) {
       --top-offset: #{random_range(0vh, 10000vh) / 100};
-      --fall-duration: #{random_range(6000, 12000s) / 1000};
-      --fall-delay: -#{random_range(0, 10000s) / 1000};
+      --fall-duration: #{random_range(6000, 12000s) / 100};
+      --fall-delay: -#{random_range(0, 10000s) / 100};
     }
   }
 

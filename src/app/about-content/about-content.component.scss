@@ -3,6 +3,8 @@
   flex-direction: column;
   text-align: center;
   align-items: center;
+  margin: 0;
+  margin-top: 20vh;
 }
 
 img {
@@ -10,13 +12,14 @@ img {
   max-width: 400px;
 }
 
-h1, h2 {
-  font-family: 'Alagard';
+h1,
+h2 {
+  font-family: "Alagard";
   color: #0c065f;
 }
 
 p {
-  font-family: 'Bluebird';
+  font-family: "Bluebird";
   color: #2c0a4c;
 }
 
