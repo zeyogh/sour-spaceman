@@ -11,4 +11,8 @@ import { BodyContentComponent } from './body-content/body-content.component';
 })
 export class AppComponent {
   title = 'sour-spaceman-app';
+
+  numSequence(n: number): Array<number> {
+    return Array(n);
+  }
 }
