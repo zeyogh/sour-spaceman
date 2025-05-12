@@ -1,0 +1,33 @@
+$shortest-dim: 25px;
+$color: lightslategray;
+
+#screen-border {
+  z-index: 1;
+}
+
+.bottom {
+  position: fixed;
+  bottom: 0;
+  align-self: center;
+  width: 100vw;
+  height: $shortest-dim;
+  background: $color;
+}
+
+.left {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: $shortest-dim;
+  height: 100vh;
+  background: $color;
+}
+
+.right {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: $shortest-dim;
+  height: 100vh;
+  background: $color;
+}

@@ -9,10 +9,11 @@
 }
 
 #desc {
+  z-index: -1;
   grid-column: 2;
   background-color: blueviolet;
   color: #2c0a4c;
-  font-family: 'Bluebird';
+  font-family: "Bluebird";
   width: 640px;
   height: 360px;
   position: relative;
@@ -23,7 +24,6 @@
   margin: 5px;
   display: flex;
   justify-content: center;
-
 }
 
 img {
