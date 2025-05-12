@@ -1,22 +1,30 @@
-<header>
-  <div class="grid-container">
-    <!-- <div class="item-logo">
-      <img src="logo.png" alt="logo lol" class="rounded" A logo />
-    </div> -->
-    <div class="item-title">
-      <h1>Sour Spaceman</h1>
-    </div>
-    <div class="item-button">
-      <app-header-button [label]="'Games'" [link]="'/games'" />
-    </div>
-    <div class="item-button">
-      <app-header-button [label]="'Blog'" [link]="'/blog'" />
-    </div>
-    <div class="item-button">
-      <app-header-button [label]="'About'" [link]="'/about'" />
-    </div>
-    <div class="item-button">
-      <app-header-button [label]="'Contact'" [link]="'/contact'" />
-    </div>
+<header class="parent">
+  <div class="child">
+    <img src="logo.png" alt="logo lol" class="rounded" A logo />
+  </div>
+  <div class="child">
+    <h1>Sour Spaceman</h1>
+  </div>
+  <div class="spacer child"></div>
+  <div class="child" id="games-button">
+    <app-header-button [label]="'Games'" [link]="'/games'" />
+  </div>
+  <div class="child" id="blog-button">
+    <app-header-button [label]="'Blog'" [link]="'/blog'" />
+  </div>
+  <div class="child" id="about-button">
+    <app-header-button [label]="'About'" [link]="'/about'" />
+  </div>
+  <div class="child" id="contact-button">
+    <app-header-button [label]="'Contact'" [link]="'/contact'" />
+  </div>
+  <div class="child">
+    <img src="mini_icon.png" alt="youtube" A logo />
+  </div>
+  <div class="child">
+    <img src="mini_icon.png" alt="twitter" A logo />
+  </div>
+  <div class="child">
+    <img src="mini_icon.png" alt="bluesky" A logo />
   </div>
 </header>
