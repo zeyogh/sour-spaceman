@@ -10,7 +10,7 @@ html {
   overflow-x: hidden;
 }
 
-.shiningButton {
+.shining-button {
   font: inherit;
   cursor: pointer;
   border-radius: 4px;
@@ -42,13 +42,13 @@ html {
   touch-action: manipulation;
 }
 
-.shiningButton:hover {
+.shining-button:hover {
   transition: 0.75s;
   background-position: right center;
   color: $main-color;
   text-decoration: none;
 }
 
-.shiningButton:active {
+.shining-button:active {
   transform: scale(0.95);
 }

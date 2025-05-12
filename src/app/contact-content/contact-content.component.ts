@@ -1,10 +1,4 @@
-import {
-  afterNextRender,
-  Component,
-  DestroyRef,
-  inject,
-  viewChild,
-} from '@angular/core';
+import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ContactForm } from './contact-content.model';
 
@@ -16,6 +10,7 @@ import { ContactForm } from './contact-content.model';
 })
 export class ContactContentComponent {
   form: ContactForm = {
+    name: '',
     email: '',
     message: '',
   };

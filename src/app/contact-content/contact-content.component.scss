@@ -1,22 +1,55 @@
 @import "../../variables.scss";
 
+* {
+  box-sizing: border-box;
+}
+
 form {
   background-color: $main-color;
+  width: 50%;
+  height: 40%;
+  margin: 0 auto;
+  padding: 56px;
   display: flex;
   flex-direction: column;
-  max-width: 40%;
-  align-items: center;
-  text-align: center;
-  margin: 0 auto;
 }
 
-h1,
-h2 {
+h1 {
   font-family: "Alagard";
-  color: $main-color-darker;
+  color: white;
+  text-align: center;
 }
 
-label {
+textarea {
+  resize: none;
+}
+
+input,
+textarea {
   font-family: "Bluebird";
-  color: $main-color-darker;
+  font-size: 16px;
+  line-height: 1;
+}
+
+textarea::placeholder,
+input::placeholder {
+  font-family: "Alagard";
+  font-size: 16px;
+  font-weight: bold;
+  opacity: 0.5;
+  color: $main-color-faint;
+}
+
+p {
+  font-family: "Alagard";
+  font-size: 16px;
+  font-weight: bold;
+  color: indianred;
+}
+
+.form-element {
+  padding: 8px;
+  margin: 8px;
+  align-self: center;
+  width: 100%;
 }
