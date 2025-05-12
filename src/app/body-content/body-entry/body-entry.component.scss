@@ -1,3 +1,5 @@
+@import "../../../variables.scss";
+
 $box-width: 400px;
 $box-height: 400px;
 
@@ -38,8 +40,8 @@ img {
   z-index: -1;
   padding: 0px;
   grid-row: 1;
-  background-color: blueviolet;
-  color: #2c0a4c;
+  background-color: $main-color;
+  color: $main-color-darker;
   position: relative;
 }
 
@@ -64,5 +66,5 @@ time {
   text-align: right;
   padding: 5px;
   margin: 5px;
-  color: #4d0b8a;
+  color: $main-color-faint;
 }

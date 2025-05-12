@@ -1,5 +1,6 @@
+@import "../../variables.scss";
+
 $shortest-dim: 25px;
-$color: lightslategray;
 
 #screen-border {
   z-index: 1;
@@ -11,7 +12,7 @@ $color: lightslategray;
   align-self: center;
   width: 100vw;
   height: $shortest-dim;
-  background: $color;
+  background: $main-color-darker;
 }
 
 .left {
@@ -20,7 +21,7 @@ $color: lightslategray;
   left: 0;
   width: $shortest-dim;
   height: 100vh;
-  background: $color;
+  background: $main-color-darker;
 }
 
 .right {
@@ -29,5 +30,5 @@ $color: lightslategray;
   right: 0;
   width: $shortest-dim;
   height: 100vh;
-  background: $color;
+  background: $main-color-darker;
 }

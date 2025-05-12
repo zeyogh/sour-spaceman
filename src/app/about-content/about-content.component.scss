@@ -1,3 +1,5 @@
+@import "../../variables.scss";
+
 #about {
   display: flex;
   flex-direction: column;
@@ -15,12 +17,12 @@ img {
 h1,
 h2 {
   font-family: "Alagard";
-  color: lightsteelblue;
+  color: white;
 }
 
 p {
   font-family: "Bluebird";
-  color: thistle;
+  color: $main-color;
 }
 
 #motto {

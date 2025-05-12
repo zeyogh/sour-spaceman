@@ -1,41 +1,7 @@
-@font-face {
-  font-family: "EasterEarly";
-  src: url("../public/fonts/EASTER-Early.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Alagard";
-  src: url("../public/fonts/alagard.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Amerika";
-  src: url("../public/fonts/Amerika-EPe.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Amerika-Alternate";
-  src: url("../public/fonts/AmerikaAlternates-OYP.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Bluebird";
-  src: url("../public/fonts/Bluebird-n56J.otf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
+@import "variables.scss";
 
 html {
   background-color: rgb(0, 0, 0);
-  // background: linear-gradient(to bottom, #000000 0%, #141414 100%);
   max-width: 100%;
   overflow-x: hidden;
 }
@@ -48,7 +14,7 @@ html {
   font-size: 1.5em;
   font-family: "Alagard";
   border: 1mm outset #f0e68f;
-  color: #0c065f;
+  color: $main-color-darker;
   width: 10rem;
   height: 2rem;
   display: flex;
@@ -75,7 +41,7 @@ html {
 .goldButton:hover {
   transition: 0.75s;
   background-position: right center;
-  color: #d30f7b;
+  color: $main-color;
   text-decoration: none;
 }
 

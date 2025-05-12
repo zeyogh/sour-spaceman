@@ -1,3 +1,5 @@
+@import "../../variables.scss";
+
 html {
   display: flex;
   text-align: center;
@@ -6,22 +8,19 @@ html {
 p {
   margin: auto;
   width: 80%;
-  // border: 3px dotted #2c0a4c; //temporary border for me to see
   padding: 10px;
-  color: #2c0a4c;
+  color: $main-color-darker;
   text-align: justify;
   font-family: "Bluebird";
 }
 
 #posts {
-  // justify-content: center;
   align-items: center;
   list-style: none;
   margin: 0px;
   padding: 0px;
   display: flex;
   gap: 0.5rem;
-  // overflow: auto;
   flex-direction: column;
   margin-top: 20vh;
 }

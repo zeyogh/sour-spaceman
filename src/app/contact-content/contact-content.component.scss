@@ -1,5 +1,7 @@
+@import "../../variables.scss";
+
 form {
-  background-color: blueviolet;
+  background-color: $main-color;
   display: flex;
   flex-direction: column;
   max-width: 40%;
@@ -12,12 +14,12 @@ form {
 h1,
 h2 {
   font-family: "Alagard";
-  color: #0c065f;
+  color: $main-color-darker;
 }
 
 label {
   font-family: "Bluebird";
-  color: #2c0a4c;
+  color: $main-color-darker;
 }
 
 input,

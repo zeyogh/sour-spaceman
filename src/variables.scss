@@ -1,0 +1,39 @@
+$main-color: blueviolet;
+$main-color-darker: #2c0a4c;
+$main-color-faint: #4d0b8a;
+$accent-color: #fffb00;
+
+@font-face {
+  font-family: "EasterEarly";
+  src: url("../public/fonts/EASTER-Early.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Alagard";
+  src: url("../public/fonts/alagard.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Amerika";
+  src: url("../public/fonts/Amerika-EPe.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Amerika-Alternate";
+  src: url("../public/fonts/AmerikaAlternates-OYP.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bluebird";
+  src: url("../public/fonts/Bluebird-n56J.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
