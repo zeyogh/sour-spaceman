@@ -100,12 +100,12 @@ body {
 
 @keyframes animShootingStar {
   from {
-    transform: translateY(-2800px) translateX(-6000px) rotate(120deg);
+    transform: translateY(-1500px) translateX(-5000px) rotate(110deg);
     opacity: 1;
     height: 5px;
   }
   to {
-    transform: translateY(-100px) translateX(300px) rotate(120deg);
+    transform: translateY(100px) translateX(300px) rotate(110deg);
     opacity: 1;
     height: 800px;
   }
@@ -129,5 +129,5 @@ body {
 }
 
 .comet {
-  @include shooting-star-template(1, 5px, 10s);
+  @include shooting-star-template(1, 5px, 30s);
 }
