@@ -40,7 +40,7 @@ img {
   z-index: -1;
   padding: 0px;
   grid-row: 1;
-  background-color: $main-color;
+  background-color: $main-color-see-through;
   color: $main-color-darker;
   position: relative;
 }
@@ -68,5 +68,5 @@ time {
   text-align: right;
   padding: 8px;
   margin: 8px;
-  color: $main-color-faint;
+  color: $main-color-darker;
 }
