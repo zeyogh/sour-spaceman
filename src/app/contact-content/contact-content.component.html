@@ -1,36 +1,25 @@
 <form>
   <h2>Contact Us!</h2>
-  <label for="email" [(ngModel)]="form.email">Email</label>
+  <label for="first_name">First Name</label>
   <input
-    id="email"
-    type="email"
-    name="email"
+    id="first_name"
+    type="first_name"
+    name="first_name"
     ngModel
     required
     email
     #email="ngModel"
   />
-  <label for="message" [(ngModel)]="form.message">Message</label>
+  <label for="last_name">Last Name</label>
   <input
-    id="message"
-    type="text"
-    name="message"
+    id="last_name"
+    type="last_name"
+    name="last_name"
     ngModel
     required
-    minlength="5"
-    maxlength="500"
-    #message="ngModel"
+    email
+    #email="ngModel"
   />
-  <button class="button">Submit</button>
-  @if (email.touched && email.dirty && email.invalid) {
-  <p>Invalid email.</p>
-  } @if (message.touched && message.dirty && message.invalid) {
-  <p>Invalid message.</p>
-  }
-</form>
-
-<!-- <form #form="ngForm" (ngSubmit)="onSubmit(form)">
-  <h2>Contact Us!</h2>
   <label for="email">Email</label>
   <input
     id="email"
@@ -52,10 +41,10 @@
     maxlength="500"
     #message="ngModel"
   />
-  <button class="button">Login</button>
+  <button class="button">Submit</button>
   @if (email.touched && email.dirty && email.invalid) {
   <p>Invalid email.</p>
   } @if (message.touched && message.dirty && message.invalid) {
   <p>Invalid message.</p>
   }
-</form> -->
+</form>
