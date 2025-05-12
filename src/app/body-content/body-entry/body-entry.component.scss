@@ -13,7 +13,7 @@ img {
   display: grid;
   grid-template-columns: repeat(2, 0.05fr);
   gap: 0px;
-  padding: 15px;
+  padding: 16px;
 }
 
 .grid-container > div {
@@ -47,15 +47,17 @@ img {
 
 h2 {
   font-family: "Alagard";
-  font-size: 50px;
-  padding: 5px;
-  margin: 5px;
+  font-size: 56px;
+  padding: 8px;
+  margin: 8px;
+  padding-bottom: 0px;
 }
 
 p {
   font-family: "Bluebird";
-  padding: 5px;
-  margin: 5px;
+  padding: 8px;
+  margin: 8px;
+  padding-top: 0px;
 }
 
 time {
@@ -64,7 +66,7 @@ time {
   right: 0;
   font-family: "Bluebird";
   text-align: right;
-  padding: 5px;
-  margin: 5px;
+  padding: 8px;
+  margin: 8px;
   color: $main-color-faint;
 }

@@ -3,7 +3,7 @@
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 0.05fr);
-  padding: 15px;
+  padding: 16px;
 }
 
 #video {
@@ -21,8 +21,8 @@
 }
 
 #logo {
-  padding: 5px;
-  margin: 5px;
+  padding: 8px;
+  margin: 8px;
   display: flex;
   justify-content: center;
 }
@@ -33,13 +33,13 @@ img {
 }
 
 #textDescription {
-  padding: 5px;
-  margin: 5px;
+  padding: 8px;
+  margin: 8px;
 }
 
 #buyButton {
   position: absolute;
   bottom: 0;
   right: 0;
-  margin: 5px;
+  margin: 8px;
 }
