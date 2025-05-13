@@ -1,15 +1,14 @@
 <h1>Contact Us!</h1>
 
-<form>
+<form [formGroup]="form" (ngSubmit)="submitForm()">
   <input
     class="form-element"
     id="name"
     type="name"
     name="name"
     placeholder="Name"
-    ngModel
+    formControlName="name"
     required
-    #name="ngModel"
   />
 
   <input
@@ -18,10 +17,9 @@
     type="email"
     name="email"
     placeholder="Email"
-    ngModel
+    formControlName="email"
     required
     email
-    #email="ngModel"
   />
 
   <textarea
@@ -29,22 +27,24 @@
     id="message"
     name="message"
     placeholder="Enter Message"
+    formControlName="message"
+    required
     rows="16"
     cols="24"
-    ngModel
-    required
     minlength="5"
     maxlength="500"
-    #message="ngModel"
   ></textarea>
 
   <button class="shining-button form-element">Submit</button>
 </form>
 
-@if (name.touched && name.dirty && name.invalid) {
+@if (form.controls.name.touched && form.controls.name.dirty &&
+form.controls.name.invalid) {
 <p>ArgumentException: Please enter a valid name.</p>
-} @if (email.touched && email.dirty && email.invalid) {
+} @if (form.controls.email.touched && form.controls.email.dirty &&
+form.controls.email.invalid) {
 <p>ArgumentException: Please enter a valid email.</p>
-} @if (message.touched && message.dirty && message.invalid) {
+} @if (form.controls.message.touched && form.controls.message.dirty &&
+form.controls.message.invalid) {
 <p>ArgumentException: Please enter a valid message.</p>
 }
