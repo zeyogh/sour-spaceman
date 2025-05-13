@@ -104,14 +104,22 @@ body {
     opacity: 1;
     height: 5px;
   }
-  50% {
+  10% {
     transform: translateY(-450px) translateX(-1300px) rotate(115deg);
     opacity: 1;
     height: 250px;
   }
-  100% {
+  20% {
     transform: translateY(0px) translateX(0px) rotate(115deg);
     opacity: 1;
+    height: 5px;
+  }
+  20.001% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px) translateX(0px) rotate(115deg);
+    opacity: 0;
     height: 5px;
   }
 }
@@ -137,5 +145,5 @@ body {
 }
 
 .comet {
-  @include shooting-star-template(1, 5px, 5s);
+  @include shooting-star-template(1, 5px, 25s);
 }
