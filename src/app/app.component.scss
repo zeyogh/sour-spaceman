@@ -99,15 +99,20 @@ body {
 }
 
 @keyframes animShootingStar {
-  from {
-    transform: translateY(-1500px) translateX(-5000px) rotate(110deg);
+  0% {
+    transform: translateY(-750px) translateX(-1800px) rotate(115deg);
     opacity: 1;
     height: 5px;
   }
-  to {
-    transform: translateY(100px) translateX(300px) rotate(110deg);
+  50% {
+    transform: translateY(-450px) translateX(-1300px) rotate(115deg);
     opacity: 1;
-    height: 800px;
+    height: 250px;
+  }
+  100% {
+    transform: translateY(0px) translateX(0px) rotate(115deg);
+    opacity: 1;
+    height: 5px;
   }
 }
 
@@ -120,14 +125,17 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
+  opacity: 0;
   background: linear-gradient(
     to top,
     rgba(255, 255, 255, 0),
     rgba(255, 255, 255, 1)
   );
-  animation: animShootingStar $speed linear infinite;
+  animation: animShootingStar $speed cubic-bezier(0.39, 0.575, 0.565, 1)
+    infinite;
+  animation-delay: 20s;
 }
 
 .comet {
-  @include shooting-star-template(1, 5px, 30s);
+  @include shooting-star-template(1, 5px, 5s);
 }
