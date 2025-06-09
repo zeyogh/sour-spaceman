@@ -5,27 +5,37 @@
   position: fixed;
   top: 0;
   width: 100vw;
+  height: 8.9vh;
   background: $main-color-darker;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
   text-align: center;
+  white-space: nowrap;
+  overflow: visible;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  // align-items: center;
+  // text-wrap: nowrap;
 }
 
 .child {
-  display: inline-block;
   // border: 1px solid red;
   padding: 0.2rem 2rem;
-  vertical-align: middle;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .rounded {
   object-fit: cover;
   border-radius: 50%;
-  height: 72px;
-  width: 72px;
+  height: 3.5rem;
+  width: 3.5rem;
 }
 
 .spacer {
-  padding-inline: 4rem;
+  padding-inline: 5rem;
 }
 
 @media (min-width: 768px) {
