@@ -3,7 +3,7 @@
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 0.05fr);
-  padding-bottom: 28px;
+  margin-bottom: 28px;
 }
 
 #video {
