@@ -4,7 +4,12 @@
     [class.leftRow]="keepLeft()"
     [class.rightRow]="!keepLeft()"
   >
-    <img [src]="this.imagePath" [alt]="this.imagePath" />
+    <img
+      [class.leftImg]="keepLeft()"
+      [class.rightImg]="!keepLeft()"
+      [src]="this.imagePath"
+      [alt]="this.imagePath"
+    />
   </div>
   <div
     id="postText"
@@ -14,16 +19,6 @@
     <article>
       <h2>{{ this.title }}</h2>
       <p>{{ this.textContent }}</p>
-      <!-- <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ex leo,
-        gravida eu venenatis et, sollicitudin ut enim. Praesent ultricies lacus
-        id purus laoreet interdum.
-      </p>
-      <p>
-        Aliquam luctus tortor ligula, vitae pretium libero rhoncus id. Curabitur
-        vehicula auctor orci vel faucibus. Praesent sodales urna ut lectus
-        vehicula maximus.
-      </p> -->
       <p>{{ this.signoff }}</p>
       <time>{{ this.date | date }}</time>
     </article>

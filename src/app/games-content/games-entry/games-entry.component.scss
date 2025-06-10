@@ -4,6 +4,9 @@
   display: grid;
   grid-template-columns: repeat(2, 0.05fr);
   margin-bottom: 28px;
+  background-color: $main-color-see-through;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 #video {
@@ -12,7 +15,7 @@
 
 #desc {
   grid-column: 2;
-  background-color: $main-color-see-through;
+  // background-color: $main-color-see-through;
   color: $main-color-darker;
   font-family: "Bluebird";
   width: 640px;

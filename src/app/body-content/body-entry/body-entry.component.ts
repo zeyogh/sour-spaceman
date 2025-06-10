@@ -25,10 +25,8 @@ export class BodyEntryComponent {
 
   keepLeft(): boolean {
     if (this.el.nativeElement.classList.contains('imageOnLeft')) {
-      console.log(this.title + ' has left');
       return true;
     }
-    console.log(this.title + ' has right');
     return false;
   }
 

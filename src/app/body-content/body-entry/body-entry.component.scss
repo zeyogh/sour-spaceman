@@ -3,6 +3,14 @@
 $box-width: 400px;
 $box-height: 400px;
 
+.leftImg {
+  border-radius: 25px 0px 0px 25px;
+}
+
+.rightImg {
+  border-radius: 0px 25px 25px 0px;
+}
+
 img {
   object-fit: cover;
   width: $box-width;
@@ -24,10 +32,12 @@ img {
 
 .leftRow {
   grid-column: 1;
+  border-radius: 25px 0px 0px 25px;
 }
 
 .rightRow {
   grid-column: 2;
+  border-radius: 0px 25px 25px 0px;
 }
 
 #postImage {
