@@ -2,6 +2,8 @@
 
 $box-width: 400px;
 $box-height: 400px;
+$left-box-shadow: $main-color -1px 0 15px 0;
+$right-box-shadow: $main-color 1px 0 15px 0;
 
 .leftImg {
   border-radius: 25px 0px 0px 25px;
@@ -12,6 +14,15 @@ $box-height: 400px;
 }
 
 img {
+  position: absolute;
+  object-fit: cover;
+  width: $box-width;
+  height: $box-width;
+}
+
+.overlay {
+  position: absolute;
+  grid-row: 1;
   object-fit: cover;
   width: $box-width;
   height: $box-width;
@@ -33,14 +44,17 @@ img {
 .leftRow {
   grid-column: 1;
   border-radius: 25px 0px 0px 25px;
+  box-shadow: $left-box-shadow;
 }
 
 .rightRow {
   grid-column: 2;
   border-radius: 0px 25px 25px 0px;
+  box-shadow: $right-box-shadow;
 }
 
 #postImage {
+  position: relative;
   object-fit: cover;
   padding: 0px;
   grid-row: 1;

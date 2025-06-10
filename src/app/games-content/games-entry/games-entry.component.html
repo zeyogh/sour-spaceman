@@ -1,10 +1,11 @@
-<div class="grid-container">
+<div class="grid-container hologram-purple">
   <div id="video">
     <youtube-player [videoId]="this.video" [height]="360" [width]="640" />
   </div>
   <div id="desc">
     <div id="logo">
       <img [src]="this.logo" [alt]="this.title" />
+      <div class="overlay hologram-plain"></div>
     </div>
     <p id="textDescription">{{ this.description }}</p>
     <a

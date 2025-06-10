@@ -10,11 +10,17 @@
       [src]="this.imagePath"
       [alt]="this.imagePath"
     />
+    <div
+      [class.leftImg]="keepLeft()"
+      [class.rightImg]="!keepLeft()"
+      class="overlay hologram-plain"
+    ></div>
   </div>
   <div
     id="postText"
     [class.leftRow]="!keepLeft()"
     [class.rightRow]="keepLeft()"
+    class="hologram-purple"
   >
     <article>
       <h2>{{ this.title }}</h2>

@@ -1,12 +1,17 @@
 @import "../../../variables.scss";
 
+$img-width: 640px;
+$img-height: 360px;
+
 .grid-container {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(2, 0.05fr);
   margin-bottom: 28px;
   background-color: $main-color-see-through;
   padding: 10px;
   border-radius: 10px;
+  box-shadow: $main-color 0 0 15px 0;
 }
 
 #video {
@@ -18,8 +23,8 @@
   // background-color: $main-color-see-through;
   color: $main-color-darker;
   font-family: "Bluebird";
-  width: 640px;
-  height: 360px;
+  width: $img-width;
+  height: $img-height;
   position: relative;
 }
 
@@ -45,4 +50,12 @@ img {
   bottom: 0;
   right: 0;
   margin: 8px;
+}
+
+.overlay {
+  position: absolute;
+  grid-row: 1;
+  object-fit: cover;
+  width: $img-width;
+  height: $img-height;
 }

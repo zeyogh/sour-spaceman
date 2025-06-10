@@ -1,8 +1,8 @@
 <h1>Contact Us!</h1>
 
-<form [formGroup]="form" (ngSubmit)="submitForm()">
+<form [formGroup]="form" class="hologram-purple" (ngSubmit)="submitForm()">
   <input
-    class="form-element"
+    class="form-element hologram-plain"
     id="name"
     type="name"
     name="name"
@@ -12,7 +12,7 @@
   />
 
   <input
-    class="form-element"
+    class="form-element hologram-plain"
     id="email"
     type="email"
     name="email"
@@ -23,7 +23,7 @@
   />
 
   <textarea
-    class="form-element"
+    class="form-element hologram-plain"
     id="message"
     name="message"
     placeholder="Enter Message"

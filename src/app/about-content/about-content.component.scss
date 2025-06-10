@@ -45,6 +45,8 @@ p {
 
 .icon {
   grid-row: 1;
+  position: relative;
+  // background: purple;
 }
 
 .name {
@@ -54,6 +56,10 @@ p {
 .description {
   grid-row: 3;
   text-align: left;
+}
+
+.logo {
+  position: relative;
 }
 
 .zeynep {
@@ -69,8 +75,15 @@ p {
 }
 
 .rounded {
+  position: relative;
   object-fit: cover;
   border-radius: 50%;
   height: 152px;
   width: 152px;
+}
+
+.overlay {
+  position: absolute;
+  width: 152px;
+  height: 152px;
 }
