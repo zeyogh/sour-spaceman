@@ -1,6 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { FormBuilder, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ContactForm } from './contact-content.model';
+import emailjs from '@emailjs/browser';
 
 @Component({
   selector: 'app-contact-content',
@@ -12,12 +13,21 @@ export class ContactContentComponent {
   formBuilder = inject(FormBuilder);
 
   form = this.formBuilder.group({
-    name: [''],
-    email: [''],
-    message: [''],
+    email: 'zeynepo@a-t-g.com',
+    from_email: '',
+    from_name: '',
+    message: '',
   });
 
-  submitForm() {
-    console.log(this.form.value);
+  async submitForm() {
+    emailjs.init('n37SD3FTj1G7MuaNx');
+    await emailjs.send('service_7qzowtf', 'template_o0sq1rc', {
+      email: this.form.value.email,
+      from_email: this.form.value.from_email,
+      from_name: this.form.value.from_name,
+      message: this.form.value.message,
+    });
+
+    this.form.reset();
   }
 }

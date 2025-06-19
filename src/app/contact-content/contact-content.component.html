@@ -1,23 +1,23 @@
 <h1>Contact Us!</h1>
 
-<form [formGroup]="form" class="hologram-purple" (ngSubmit)="submitForm()">
+<form [formGroup]="form" class="hologram-purple" (submit)="submitForm()">
   <input
     class="form-element hologram-plain"
-    id="name"
+    id="from_name"
     type="name"
-    name="name"
+    name="from_name"
     placeholder="Name"
-    formControlName="name"
+    formControlName="from_name"
     required
   />
 
   <input
     class="form-element hologram-plain"
-    id="email"
+    id="from_email"
     type="email"
-    name="email"
+    name="from_email"
     placeholder="Email"
-    formControlName="email"
+    formControlName="from_email"
     required
     email
   />
@@ -35,14 +35,14 @@
     maxlength="500"
   ></textarea>
 
-  <button class="shining-button form-element">Submit</button>
+  <button type="submit" class="shining-button form-element">Submit</button>
 </form>
 
-@if (form.controls.name.touched && form.controls.name.dirty &&
-form.controls.name.invalid) {
+@if (form.controls.from_name.touched && form.controls.from_name.dirty &&
+form.controls.from_name.invalid) {
 <p>ArgumentException: Please enter a valid name.</p>
-} @if (form.controls.email.touched && form.controls.email.dirty &&
-form.controls.email.invalid) {
+} @if (form.controls.from_email.touched && form.controls.from_email.dirty &&
+form.controls.from_email.invalid) {
 <p>ArgumentException: Please enter a valid email.</p>
 } @if (form.controls.message.touched && form.controls.message.dirty &&
 form.controls.message.invalid) {
