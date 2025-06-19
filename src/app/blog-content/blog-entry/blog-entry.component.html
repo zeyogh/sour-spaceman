@@ -25,10 +25,14 @@
     <article>
       <h2>{{ this.title() }}</h2>
       <p>{{ this.textContent() }}</p>
-      <a [routerLink]="['/blog', id()]" routerLinkActive="selected"
+      <p>{{ this.signoff() }}</p>
+      <a
+        id="readMore"
+        [routerLink]="['/blog', id()]"
+        routerLinkActive="selected"
+        [queryParams]="{ title: title(), img: img() }"
         >Read More</a
       >
-      <p>{{ this.signoff() }}</p>
       <time>{{ this.date() | date }}</time>
     </article>
   </div>

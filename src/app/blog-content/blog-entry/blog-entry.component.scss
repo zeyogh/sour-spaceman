@@ -68,6 +68,11 @@ img {
   position: relative;
 }
 
+#readMore {
+  color: $main-color-darker;
+  text-decoration: none;
+}
+
 h2 {
   font-family: "Alagard";
   font-size: 56px;
@@ -76,7 +81,8 @@ h2 {
   padding-bottom: 0px;
 }
 
-p {
+p,
+a {
   font-family: "Bluebird";
   padding: 8px;
   margin: 8px;
