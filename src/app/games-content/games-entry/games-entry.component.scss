@@ -21,7 +21,7 @@ $img-height: 360px;
 #desc {
   grid-column: 2;
   // background-color: $main-color-see-through;
-  color: $main-color-darker;
+  color: $text-color;
   font-family: "Bluebird";
   width: $img-width;
   height: $img-height;
@@ -56,6 +56,6 @@ img {
   position: absolute;
   grid-row: 1;
   object-fit: cover;
-  width: $img-width;
-  height: $img-height;
+  width: 456px;
+  height: 160px;
 }

@@ -1,6 +1,5 @@
 import { Component, inject } from '@angular/core';
 import { FormBuilder, FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { ContactForm } from './contact-content.model';
 import emailjs from '@emailjs/browser';
 
 @Component({
