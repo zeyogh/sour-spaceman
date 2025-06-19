@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
-import { BodyContentComponent } from './body-content/body-content.component';
+import { BlogContentComponent } from './blog-content/blog-content.component';
 import { AboutContentComponent } from './about-content/about-content.component';
 import { GamesContentComponent } from './games-content/games-content.component';
 import { ContactContentComponent } from './contact-content/contact-content.component';
@@ -16,7 +16,7 @@ export const routes: Routes = [
   },
   {
     path: 'blog',
-    component: BodyContentComponent,
+    component: BlogContentComponent,
   },
   {
     path: 'about',

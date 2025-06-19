@@ -1,7 +1,7 @@
 <ul id="posts">
   @for (post of posts; track post.id) { @let stepCounter = countUp();
   <li>
-    <app-body-entry
+    <app-blog-entry
       #postGrid
       [title]="post.title"
       [textContent]="post.textContent"

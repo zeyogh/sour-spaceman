@@ -1,13 +1,13 @@
-import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, Input, ViewChild } from '@angular/core';
 import { DatePipe } from '@angular/common';
 
 @Component({
-  selector: 'app-body-entry',
+  selector: 'app-blog-entry',
   imports: [DatePipe],
-  templateUrl: './body-entry.component.html',
-  styleUrl: './body-entry.component.scss',
+  templateUrl: './blog-entry.component.html',
+  styleUrl: './blog-entry.component.scss',
 })
-export class BodyEntryComponent {
+export class BlogEntryComponent {
   @Input({ required: true }) title!: string;
   @Input({ required: true }) textContent!: string;
   @Input({ required: true }) img!: string;
