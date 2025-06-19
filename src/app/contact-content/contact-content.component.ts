@@ -9,9 +9,9 @@ import emailjs from '@emailjs/browser';
   styleUrl: './contact-content.component.scss',
 })
 export class ContactContentComponent {
-  formBuilder = inject(FormBuilder);
+  #formBuilder = inject(FormBuilder);
 
-  form = this.formBuilder.group({
+  form = this.#formBuilder.group({
     email: 'zeynepo@a-t-g.com',
     from_email: '',
     from_name: '',
