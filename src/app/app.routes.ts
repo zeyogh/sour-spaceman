@@ -8,7 +8,7 @@ import { ContactContentComponent } from './contact-content/contact-content.compo
 export const routes: Routes = [
   {
     path: '',
-    component: HeaderComponent,
+    component: BlogContentComponent,
   },
   {
     path: 'games',
