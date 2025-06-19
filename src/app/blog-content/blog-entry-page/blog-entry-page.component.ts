@@ -14,6 +14,7 @@ export class BlogEntryPageComponent {
   posts = DUMMY_POSTS;
   title = '';
   img = '';
+  textContent = '';
 
   constructor() {
     const snapShot = this.#route.snapshot.queryParamMap;
@@ -21,5 +22,6 @@ export class BlogEntryPageComponent {
     const post = this.posts.find((post) => post.id === id);
     this.title = post?.title!;
     this.img = post?.img!;
+    this.textContent = post?.textContent!;
   }
 }
