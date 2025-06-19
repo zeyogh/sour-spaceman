@@ -1,13 +1,13 @@
 <div class="grid-container hologram-purple">
   <div id="video">
-    <youtube-player [videoId]="this.video" [height]="360" [width]="640" />
+    <youtube-player [videoId]="this.video()" [height]="360" [width]="640" />
   </div>
   <div id="desc">
     <div id="logo">
-      <img [src]="this.logo" [alt]="this.title" />
+      <img [src]="this.logo()" [alt]="this.title()" />
       <div class="overlay hologram-plain"></div>
     </div>
-    <p id="textDescription">{{ this.description }}</p>
+    <p id="textDescription">{{ this.description() }}</p>
     <a
       id="buyButton"
       href="https://stackoverflow.com"
