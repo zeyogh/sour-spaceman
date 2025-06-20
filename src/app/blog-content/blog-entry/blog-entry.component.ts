@@ -28,10 +28,6 @@ export class BlogEntryComponent {
     return false;
   }
 
-  get imagePath() {
-    return this.img;
-  }
-
   goToPage() {
     this.#router.navigate(['/blog/post'], {
       queryParams: { id: this.id() },
