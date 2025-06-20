@@ -100,27 +100,27 @@ body {
 
 @keyframes animShootingStar {
   0% {
-    transform: translateY(-750px) translateX(-1800px) rotate(115deg);
+    transform: rotate(115deg) translateY(1750px);
     opacity: 1;
     height: 5px;
   }
   10% {
-    transform: translateY(-450px) translateX(-1300px) rotate(115deg);
+    transform: rotate(115deg) translateY(1000px);
     opacity: 1;
     height: 250px;
   }
-  20% {
-    transform: translateY(0px) translateX(0px) rotate(115deg);
+  19% {
     opacity: 1;
+  }
+  20% {
+    transform: rotate(115deg) translateX(-120px) translateY(5px);
+    opacity: 0;
     height: 5px;
   }
-  20.001% {
-    opacity: 0;
-  }
   100% {
-    transform: translateY(0px) translateX(0px) rotate(115deg);
+    transform: rotate(115deg) translateX(-120px) translateY(5px);
     opacity: 0;
-    height: 1px;
+    height: 5px;
   }
 }
 
@@ -141,9 +141,9 @@ body {
   );
   animation: animShootingStar $speed cubic-bezier(0.39, 0.575, 0.565, 1)
     infinite;
-  animation-delay: 20s;
+  animation-delay: 10s;
 }
 
 .comet {
-  @include shooting-star-template(1, 5px, 25s);
+  @include shooting-star-template(1, 5px, 20s);
 }
