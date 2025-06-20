@@ -4,7 +4,7 @@ export const DUMMY_POSTS = [
     title: 'First Post',
     textContent: 'Lorem Ipsum...',
     img: 'character_img.webp',
-    signoff: '--Zeynep',
+    signoff: '–Zeynep',
     date: '2025-12-31',
   },
   {
@@ -12,7 +12,7 @@ export const DUMMY_POSTS = [
     title: 'Second Post',
     textContent: 'Lorem Ipsum something...',
     img: 'character_img.webp',
-    signoff: '--Zeynep Again',
+    signoff: '–Zeynep Again',
     date: '2025-06-21',
   },
   {
@@ -20,7 +20,7 @@ export const DUMMY_POSTS = [
     title: 'Third Post',
     textContent: 'Lorem Ipsum ffdffsfdsf...',
     img: 'character_img.webp',
-    signoff: '--Zeynep 3',
+    signoff: '–Zeynep 3',
     date: '2025-06-21',
   },
   {
@@ -28,7 +28,7 @@ export const DUMMY_POSTS = [
     title: 'Fourth Post',
     textContent: 'Lorem Ipsum GRRRRRRRRR...',
     img: 'character_img.webp',
-    signoff: '--Zeynep Encore',
+    signoff: '–Zeynep Encore',
     date: '2025-06-21',
   },
 ];

@@ -20,6 +20,10 @@ img {
   height: $box-width;
 }
 
+h2 {
+  color: white;
+}
+
 .overlay {
   position: absolute;
   grid-row: 1;
@@ -64,12 +68,12 @@ img {
   padding: 0px;
   grid-row: 1;
   background-color: $main-color-see-through;
-  color: $text-color;
+  color: $text-color-light;
   position: relative;
 }
 
 #readMore {
-  color: $main-color-darker;
+  color: white;
   text-decoration: none;
 }
 
@@ -89,6 +93,11 @@ a {
   padding-top: 0px;
 }
 
+#readMore:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 time {
   position: absolute;
   bottom: 0;
@@ -97,5 +106,5 @@ time {
   text-align: right;
   padding: 8px;
   margin: 8px;
-  color: $main-color-darker;
+  color: $text-color-light;
 }
