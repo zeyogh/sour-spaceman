@@ -55,6 +55,8 @@ p {
 .icon {
   grid-row: 1;
   position: relative;
+  display: flex;
+  justify-content: center;
   // background: purple;
 }
 
@@ -96,8 +98,10 @@ p {
   width: 152px;
 }
 
-.overlay {
+.overlay-icon {
   position: absolute;
-  width: 152px;
-  height: 152px;
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+  box-shadow: $main-color 0 0 15px 0;
 }
