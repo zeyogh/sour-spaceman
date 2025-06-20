@@ -36,7 +36,6 @@ export class BlogEntryComponent {
     this.#router.navigate(['/blog/post'], {
       queryParams: { id: this.id() },
       queryParamsHandling: 'merge',
-      replaceUrl: true,
     });
   }
 }
