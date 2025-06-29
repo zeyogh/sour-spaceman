@@ -12,7 +12,7 @@ export class ContactContentComponent {
   #formBuilder = inject(FormBuilder);
 
   form = this.#formBuilder.group({
-    email: 'zeynepo@a-t-g.com',
+    email: 'zeynep.ogh@gmail.com',
     from_email: '',
     from_name: '',
     message: '',
