@@ -11,12 +11,30 @@
 img {
   max-height: 400px;
   max-width: 400px;
+
+  @media (max-width: 767px) {
+    max-height: 250px;
+    max-width: 250px;
+  }
 }
 
-h1,
+h1 {
+  font-family: "Alagard";
+  color: white;
+
+  @media (max-width: 767px) {
+    margin-top: 0px;
+    margin-bottom: 8px;
+  }
+}
+
 h2 {
   font-family: "Alagard";
   color: white;
+
+  @media (max-width: 767px) {
+    margin-top: 16px;
+  }
 }
 
 p {
@@ -27,6 +45,13 @@ p {
 #motto {
   margin-top: 48px;
   width: 800px;
+
+  @media (max-width: 767px) {
+    min-width: 240px;
+    max-width: 250px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
 }
 
 #logo {
@@ -36,6 +61,10 @@ p {
 .logo {
   display: flex;
   justify-content: center;
+
+  @media (max-width: 767px) {
+    margin-bottom: 8px;
+  }
 }
 
 .grid-container {
@@ -43,9 +72,14 @@ p {
   grid-template-columns: repeat(3, 2fr);
   gap: 0px;
   padding: 16px;
+
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
-.grid-container > div {
+.grid-container>div {
   padding-inline: 72px;
   width: 200px;
   height: 200px;
@@ -57,7 +91,7 @@ p {
   position: relative;
   display: flex;
   justify-content: center;
-  // background: purple;
+
 }
 
 .name {
@@ -67,6 +101,11 @@ p {
 .description {
   grid-row: 3;
   text-align: left;
+
+  @media (max-width: 767px) {
+    text-align: center;
+    margin-bottom: 16px;
+  }
 }
 
 .overlay {
@@ -76,18 +115,35 @@ p {
   box-shadow: $main-color 0 0 15px 0;
   min-height: 400px;
   min-width: 380px;
+
+  @media (max-width: 767px) {
+    min-height: 250px;
+    min-width: 240px;
+    max-height: 250px;
+    max-width: 250px;
+  }
 }
 
-.zeynep {
+#zeynep {
   grid-column: 1;
+
+  @media (max-width: 767px) {
+    margin-bottom: 176px;
+  }
 }
 
-.tucker {
+#tucker {
   grid-column: 2;
+
+  @media (max-width: 767px) {
+    margin-bottom: 176px;
+  }
 }
 
-.savannah {
+#savannah {
   grid-column: 3;
+
+
 }
 
 .rounded {
@@ -96,6 +152,11 @@ p {
   border-radius: 50%;
   height: 152px;
   width: 152px;
+  margin-bottom: 150p;
+
+  @media (max-width: 767px) {
+    margin-bottom: 10px
+  }
 }
 
 .overlay-icon {
@@ -104,4 +165,6 @@ p {
   width: 150px;
   height: 150px;
   box-shadow: $main-color 0 0 15px 0;
+
+
 }
