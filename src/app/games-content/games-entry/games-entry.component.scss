@@ -12,10 +12,34 @@ $img-height: 360px;
   padding: 10px;
   border-radius: 10px;
   box-shadow: $main-color 0 0 15px 0;
+
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    max-height: 360px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+  }
 }
 
 #video {
   grid-column: 1;
+}
+
+#big-player {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+#little-player {
+  display: none;
+
+  @media (max-width: 767px) {
+    display: flex;
+  }
 }
 
 #desc {
@@ -26,6 +50,11 @@ $img-height: 360px;
   width: $img-width;
   height: $img-height;
   position: relative;
+
+  @media (max-width: 767px) {
+    max-width: 264px;
+    align-items: center;
+  }
 }
 
 #logo {
@@ -43,6 +72,11 @@ img {
 #textDescription {
   padding: 8px;
   margin: 8px;
+
+  @media (max-width: 767px) {
+    padding: 0;
+    margin: 0px;
+  }
 }
 
 #buyButton {
@@ -50,6 +84,12 @@ img {
   bottom: 0;
   right: 0;
   margin: 8px;
+
+  @media (max-width: 767px) {
+    right: auto;
+    left: 20%;
+    margin: 4px;
+  }
 }
 
 .overlay {

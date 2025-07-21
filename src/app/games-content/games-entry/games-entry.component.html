@@ -1,6 +1,7 @@
 <div class="grid-container hologram-purple">
   <div id="video">
-    <youtube-player [videoId]="this.video()" [height]="360" [width]="640" />
+    <youtube-player id="big-player" [videoId]="this.video()" [height]="360" [width]="640" />
+    <youtube-player id="little-player" [videoId]="this.video()" [height]="140" [width]="250" />
   </div>
   <div id="desc">
     <div id="logo">
@@ -8,12 +9,7 @@
       <!-- <div class="overlay hologram-plain"></div> -->
     </div>
     <p id="textDescription">{{ this.description() }}</p>
-    <a
-      id="buyButton"
-      href="https://stackoverflow.com"
-      class="shining-button"
-      target="_blank"
-    >
+    <a id="buyButton" href="https://stackoverflow.com" class="shining-button" target="_blank">
       Buy Now!
     </a>
   </div>
